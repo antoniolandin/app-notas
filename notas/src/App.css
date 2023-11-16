@@ -1,3 +1,27 @@
 .App-header {  
   text-align: center;
 }
+
+.note {
+  background-color: #fef68a;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.25);
+  padding: 10px;
+  width: 220px;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}

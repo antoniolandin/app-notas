@@ -32,13 +32,19 @@ function App() {
       text: text,
       date: date.toLocaleDateString()
     }
+
     const newNotes = [...notes, newNote];
     setNotes(newNotes);
   }
 
+  const deleteNote = (id) => {
+    setNotes(notes.filter((note) => note.id !== id)); // Seteamos las notas a un array sin la nota que eliminamos
+  }
+
+
   return (
     <div className="container">
-      <NoteList notes={notes} handleAddNote={addNote}/>
+      <NoteList notes={notes} handleAddNote={addNote} handleDeleteNote={deleteNote}/>
     </div>
   );
 

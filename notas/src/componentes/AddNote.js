@@ -9,7 +9,12 @@ const AddNote = ({ handleAddNote }) => {
     }
 
     const handleSaveClick = () => {
-        handleAddNote(noteText);
+
+        if(noteText.trim().length > 0)
+        {
+            handleAddNote(noteText);
+            setNoteText(''); // Resetear el form cuando se añada una nueva nota
+        }
     }
 
     return(

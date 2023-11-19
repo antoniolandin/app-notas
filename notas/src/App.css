@@ -30,10 +30,25 @@
   background-color: #67d7cc;
 }
 
+.note.edit {
+  background-color: lawngreen;
+}
+
+.txt-new{
+  background-color: #67d7cc;
+}
+
+.txtarea{
+  background-color: #fef68a;
+}
+
 textarea{
   border: none;
   resize: none !important;
-  background-color: #67d7cc;
+}
+
+textarea:disabled{
+  color:black;
 }
 
 textarea:focus {
@@ -52,5 +67,27 @@ textarea:focus {
 .delete-icon:hover {
   color: #7d7d7d;
   cursor: pointer;
+}
 
+.edit-icon:hover {
+  color: #7d7d7d;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: rgb(233,233,233);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+.search input {
+  border: none;
+  background-color: rgb(233,233,233);
+}
+
+.search input:focus {
+  outline: none;
 }

@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NoteList from './componentes/NotesList';
 import { useState } from 'react';
 import { nanoid } from 'nanoid';
+import AddNote from './componentes/AddNote';
 
 function App() {
 
@@ -24,9 +25,20 @@ function App() {
     }
   ]);
 
+  const addNote = (text) => {
+    const date = new Date();
+    const newNote = {
+      id: nanoid(),
+      text: text,
+      date: date.toLocaleDateString()
+    }
+    const newNotes = [...notes, newNote];
+    setNotes(newNotes);
+  }
+
   return (
     <div className="container">
-      <NoteList notes={notes}/>
+      <NoteList notes={notes} handleAddNote={addNote}/>
     </div>
   );
 

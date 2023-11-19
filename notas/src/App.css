@@ -25,3 +25,26 @@
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
+
+.note.new {
+  background-color: #67d7cc;
+}
+
+textarea{
+  border: none;
+  resize: none !important;
+  background-color: #67d7cc;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.save {
+  background-color: #8af6fe;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.25);
+  padding: 10px;
+  cursor: pointer;
+} 

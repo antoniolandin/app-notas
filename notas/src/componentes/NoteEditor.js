@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const AddNote = ({ handleAddNote }) => {
+const NoteEditor = ({ handleAddNote }) => {
 
     const [noteText, setNoteText] = useState('');
 
@@ -28,4 +28,4 @@ const AddNote = ({ handleAddNote }) => {
     );
 };
 
-export default AddNote;
+export default NoteEditor;

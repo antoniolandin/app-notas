@@ -71,7 +71,7 @@ function App() {
 
       <Search handleSearchNote={setSearchText}/>
 
-      <NoteList notes={notes.filter((note) => note.text.toLowerCase().includes(searchText))} handleAddNote={addNote} handleDeleteNote={deleteNote}/>
+      <NoteList notes={notes.filter((note) => note.text.toLowerCase().includes(searchText.toLowerCase()))} handleAddNote={addNote} handleDeleteNote={deleteNote}/>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import NoteList from './componentes/NotesList';
 import { useEffect, useState } from 'react';
 import { nanoid } from 'nanoid';
@@ -8,19 +7,29 @@ import Search from './componentes/Search';
 function App() {
   const [notes, setNotes] = useState([
     {
-    id: nanoid(),
-    text: "This is my first note!",
-    date: "17/11/2023",
+      id: nanoid(),
+      text: "Por aquí te dejo unas notas de ejemplo",
+      date: "19/11/2023",
     },
     {
       id: nanoid(),
-      text: "This is my seccond note!",
-      date: "13/11/2023",
+      text: "Comprar pan",
+      date: "12/11/2021",
     },
     {
       id: nanoid(),
-      text: "This is my third note!",
-      date: "12/11/2023",
+      text: "Comprar leche",
+      date: "12/11/2021",
+    },
+    {
+      id: nanoid(),
+      text: "Comprar huevos",
+      date: "12/11/2021",
+    },
+    {
+      id: nanoid(),
+      text: "Ver la serie de Loki",
+      date: "12/11/2021",
     }
   ]);
 

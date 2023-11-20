@@ -1,0 +1,7 @@
+/*CSS custom para que el boostrap no se cargue el body*/
+
+body {
+    background-image: url("img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
